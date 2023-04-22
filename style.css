@@ -3,5 +3,66 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(9, 82, 116);
+    padding: 12px;
+}
+
+h2.principal__texto1, .principal__texto2 {
+    text-align: center;
+    padding: 10px 6px 0 ;
+  
+}
+
+p{
+   text-align: justify;
+    margin: 2px 20px;
+    
+}
+
+main img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    
+}
+
+h3.evolucao__texto3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+iframe.evolucao__video {
+    width: 100%;
+    
+    
+}
+
+
+@media screen and (min-width:800px) {
+    main {
+        max-width:800px;
+        margin: auto;
+        border: 1px solid;
+        padding: 10px;
+        background-color: white;
+    
+    }
+
+    p{
+        padding: 10px;
+    }
+
+    body {
+        background-color: rgb(23, 66, 116);
+    }
 }
