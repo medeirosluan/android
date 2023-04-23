@@ -11,6 +11,10 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.principal {
+    padding: 0 0 15px;
+}
+
 header {
     background-color: rgb(9, 82, 116);
     padding: 12px;
@@ -32,10 +36,12 @@ p{
     
 }
 
-main img{
-    width: 351px;
+
+.principal img{
+    width:100%;
     margin: auto;
     display: block;
+    padding: 10px;
     
     
 }
@@ -47,22 +53,27 @@ h3.evolucao__texto3 {
 }
 
 iframe.evolucao__video {
-    width: 100%;
-    
+    margin: auto;
+    display: block;
+    width: 95%;
+    margin-top: 10px;
     
 }
 
-ul.lista {
+ul {
     margin: 0 20px;
     columns: 2;
     list-style: none;
     padding: 10px 0;
+    
 }
 
 .extra {
     background-color: rgba(14, 134, 46, 0.555);
-    width: 100%;
+    width: 95%;
     margin: auto;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 h4.extra__4 {
@@ -70,6 +81,7 @@ h4.extra__4 {
     padding: 5px;
     color: white;
     margin-top: 10px;
+    border-radius: 10px 10px 0 0;
    
     
 }
@@ -82,17 +94,24 @@ h4.extra__4 {
 
 
 @media screen and (min-width:800px) {
-    main {
+    .principal {
         max-width:800px;
         margin: auto;
-        border: 1px solid;
-        padding: 10px;
         background-color: white;
     
     }
 
+    footer {
+        width: 800px;
+        background-color: rgba(223, 230, 230, 0.322);
+        display: block;
+        margin: auto;
+        color: white;
+      
+    }
+
     p{
-        padding: 10px;
+        padding: 1px;
     }
 
     body {
@@ -101,9 +120,4 @@ h4.extra__4 {
 
 }
 
-@media screen and (min-width:403px) {
-    picture img {
-        width: 100%;
-    }
-}
 
