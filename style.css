@@ -9,6 +9,7 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(./imagens/arvore2.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -98,4 +99,7 @@ body {
     color: white;
    
 }
+
+
+
 
