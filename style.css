@@ -7,14 +7,19 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.616);
-    background-image: url(./imagens/arvore2.jpg);
+    background: linear-gradient(45deg, blue, rgb(4, 5, 90));
+    background-image: url(./imagens/chuva.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .cabecalo {
     background-color:#273B54;
     padding: 12px;
     display: inline-block; 
+    border-radius: 5px;
     margin: 5px;
+    position: sticky;
+    top: 5px;
    
 }
 
@@ -99,19 +104,27 @@ body {
 }
 
 @media screen and (min-width:700px) {
+    
     .cabecalo {
-        padding: 20px;
-        display: block; 
-        width: 100%;
-        margin: 0px;
+            background-color:#273B54;
+            padding: 20px;
+            display:block; 
+            border-radius: 5px;
+            margin: 0;
+            position: static;
+            top:0;
+            border-radius: 0;
+        }        
         
-    }
+        
+    
 
     .cabecalo img{
         display:none;
     }
     
 }
+
 
 
 
