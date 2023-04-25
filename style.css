@@ -20,7 +20,18 @@ body {
     margin: 5px;
     position: sticky;
     top: 5px;
-   
+}
+
+.navegacao {
+   display: flex;
+   justify-content: space-around;
+   margin: auto;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .cabecalo img{
@@ -114,15 +125,14 @@ body {
             position: static;
             top:0;
             border-radius: 0;
-        }        
+        } 
         
         
-    
-
     .cabecalo img{
         display:none;
     }
-    
+
+
 }
 
 
