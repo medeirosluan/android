@@ -114,25 +114,39 @@ body {
    
 }
 
-@media screen and (min-width:700px) {
-    
-    .cabecalo {
-            background-color:#273B54;
-            padding: 20px;
-            display:block; 
-            border-radius: 5px;
-            margin: 0;
-            position: static;
-            top:0;
-            border-radius: 0;
-        } 
-        
-        
-    .cabecalo img{
-        display:none;
+@media screen and (min-width:860px) {
+    .navegacao {
+        width: 50%;
     }
 
 
+}
+
+@media screen and (min-width:700px) {
+    .cabecalo {
+        width: 100%;
+        padding: 13px;
+        border-radius: 0;
+        margin: 0;
+        position: static;
+    }
+
+    .cabecalo > .navegacao {
+        display: block;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabecalo img {
+        display: none;
+    }
+}
+
+@media screen and (min-width:390px) {
+    .navegacao {
+        display: none;
+    }
 }
 
 
