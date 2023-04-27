@@ -1,3 +1,7 @@
+@font-face {
+    font-family:Objectis ;
+    src: url(./fontes/objectis/Objectis.otf) format('opentype');
+}
 
 * {
     margin: 0;
@@ -7,10 +11,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, blue, rgb(4, 5, 90));
-    background-image: url(./imagens/chuva.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(45deg, blue, rgb(16, 100, 16));
 }
 .cabecalo {
     background-color:#273B54;
@@ -54,6 +55,7 @@ body {
 
 .principal p {
     text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .principal img {
@@ -68,12 +70,14 @@ body {
 .inicio h2{
     text-align: center;
     padding: 10px 0;
+    font-family: Objectis;
 }
 
 .mascote h3 {
     text-align: center;
     padding: 18px;
     font-size: 24px;
+    font-family: Objectis;
 }
 
 .video {
@@ -81,6 +85,7 @@ body {
     padding-bottom: 56.25%;
     height: 0;
     max-width: 100%;
+    margin-top: 12px;
 }
 
 .video iframe {
@@ -103,6 +108,7 @@ body {
     text-align: center;
     margin-bottom: 10px;
     font-size: 2em;
+    font-family: Objectis;
 }
 
 .extra a {
@@ -129,9 +135,28 @@ body {
    
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .navegacao {
         display: none;
+    }
+
+}
+@media screen and (min-width:768px) {
+    .navegacao {
+        display: none;
+    }
+
+    .cabecalo {
+        width: 100%;
+        padding: 25px;
+        position: static;
+        margin: 0 0 0;
+
+    }
+
+    .cabecalo img {
+        display: none;
+        
     }
 
 }
