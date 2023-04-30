@@ -6,70 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TELA DE LOGIN</title>
     <style>
+
         body {
-            background-image: linear-gradient(45deg, blue, green);
+            background-image: url(./imagens/pexels-anni-roenkae-5278835.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
         }
-      .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: rgba(12, 36, 41, 0.747);
+            padding: 20px 40px 50px;
+            box-shadow: 0px 0px 10px -1px;
+        }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000046;
-  padding:50px 50px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            
+        }
 
-h2 {
-  margin-bottom: 20px;
-}
+        label{
+            color: white;
+            border: none;
+            padding: 5px;
+            outline: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
-label, input {
-  display: block;
-  color: white;
-  width: 100%;
-  margin-bottom: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+        input {
+            border: none;
+            padding: 5px;
+            outline: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
-h2 {
-    padding-bottom:20px ;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+        button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 6px 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(135, 200, 211);
+            border: none;
+            cursor: pointer;
+            
+        }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+        button:hover {
+            background-color: rgba(5, 164, 204, 0.692);
+        }
 
     </style>
 </head>
 <body>
-   
-       <div class="container">
-           
-                <form action="">
-                    <h2>Faça Login</h2>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="senha">Senha:</label>
-                    <input type="password" required>
-                    <button type="submit">Enviar</button>
-                </form>
-           
-       </div>
+   <form class="container">
+       <div class="item">
+            <h2>Login</h2>
+            <label for="">Email:</label>
+            <input type="email" placeholder="Digite seu email..." required maxlength="18">
+            <label for="senha">Senha:</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha..." required maxlength="8">
+            <button type="submit">Enviar</button>
+        </div>
+   </form>
 </body>
 </html>
